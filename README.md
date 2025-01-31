@@ -18,34 +18,6 @@ The project is based on fundamental mathematical equations governing DC motor op
 - **Mechanical Motion Equation**
 - **Electromagnetic Torque Equation**
 
-### 💪 Mathematical Model
-
-#### **1. Electrical Equation:**
-
-\( V\_{in} = E_a + R_a i_a + L_a \frac{d i_a}{dt} \)
-
-Since the back electromotive force (EMF) is given by:
-
-\( E_a = K_e \omega_m \)
-
-Substituting for \( E_a \):
-
-\( \frac{d i*a}{dt} = \frac{1}{L_a} (V*{in} - K_e \omega_m - R_a i_a) \)
-
-#### **2. Mechanical Equation:**
-
-The equation of motion for the rotor is:
-
-\( J \frac{d \omega_m}{dt} + B \omega_m = T_e - T_L \)
-
-where the electromagnetic torque \( T_e \) is:
-
-\( T_e = K_t i_a \)
-
-Substituting for \( T_e \):
-
-\( \frac{d \omega_m}{dt} = \frac{1}{J} (K_t i_a - T_L - B \omega_m) \)
-
 ## ⚙️ Simulink Implementation
 
 The model was built using:
